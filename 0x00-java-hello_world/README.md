@@ -18,5 +18,3 @@ At the end of this course, it is expected that you will be able to explain to an
 -   How Strings work and their methods
 -   How to work with arrays
 -   How to split strings in Java
-
-----------
