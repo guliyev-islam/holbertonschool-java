@@ -16,7 +16,7 @@ public class Program {
             character1.currentHealth
         );
         System.out.printf(
-            "Name: %s - Health: %d\n\n",
+            "Name: %s - Health: %d\n",
             character2.name,
             character2.currentHealth
         );
