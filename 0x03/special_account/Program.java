@@ -4,7 +4,7 @@ public class Program {
                 FeeBasedBankAccount account1 = new FeeBasedBankAccount("AAA", 30.0);
                 System.out.printf("Account %s - balance: 0,00\n", account1.getAccountNumber(), account1.getBalance());
                 account1.deposit(125);
-                System.out.printf("Account %s - balance: 124,00\n", account1.getAccountNumber(), account1.getBalance());
+                System.out.printf("Account %s - balance: 124,90\n", account1.getAccountNumber(), account1.getBalance());
                 account1.withdraw(30);
                 System.out.printf("Account %s - balance: 94,80\n", account1.getAccountNumber(), account1.getBalance());
                 account1.deposit(10);
