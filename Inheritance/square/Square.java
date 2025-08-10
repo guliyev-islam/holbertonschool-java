@@ -11,8 +11,8 @@ public class Square extends Rectangle {
             throw new IllegalArgumentException("Side must be greater than or equal to 0");
         }
         this.side = side;
-        this.height = side;
-        this.height = side;
+        setHeight(side);
+        setWidth(side);
     }
     
     
