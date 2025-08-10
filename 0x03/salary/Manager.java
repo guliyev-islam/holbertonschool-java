@@ -4,7 +4,7 @@ public class Manager extends Employee {
         super(fixedSalary);
     }
     
-    double calculateBonus(Department department) {
+    public double calculateBonus(Department department) {
         
         if (department.reachedTarget()) {
             
