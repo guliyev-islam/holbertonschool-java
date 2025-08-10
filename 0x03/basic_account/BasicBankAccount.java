@@ -68,9 +68,7 @@ public class BasicBankAccount {
     }
     
     public void applyMonthlyUpdate() {
-        balance -= calculateMonthlyFee();
-        balance += calculateMonthlyInterest();
-        
+        balance = balance - calculateMonthlyFee() + calculateMonthlyInterest();
     }
     
 }
