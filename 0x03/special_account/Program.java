@@ -34,7 +34,7 @@ public class Program {
                 account3.withdraw(106);
                 System.out.printf("Account %s - balance: 19,00\n", account3.getAccountNumber(), account3.getBalance());
                 account3.applyMonthlyUpdate();
-                System.out.printf("Account %s - balance: 12,58\n", account3.getAccountNumber(), account3.getBalance());
+                System.out.printf("Account %s - balance: 12,58\n\n", account3.getAccountNumber(), account3.getBalance());
             } catch (Exception ex) {
                 System.out.println(ex.getMessage() + "\n");
             }
