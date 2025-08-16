@@ -24,7 +24,7 @@ public class Program {
 
             Order order1 = new Order(0, itemOrder1);
 
-            System.out.printf("Total Order: %.2f\n", order1.calculateTotal());
+            System.out.printf(String.format("Total Order: %.2f\n", order1.calculateTotal()).replace(".", ","));
 
             // Order 2
             ItemOrder[] itemOrder2 = new ItemOrder[] {
@@ -34,7 +34,7 @@ public class Program {
 
             Order order2 = new Order(10, itemOrder2);
 
-            System.out.printf("Total Order: %.2f\n", order2.calculateTotal());
+            System.out.printf(String.format("Total Order: %.2f\n", order2.calculateTotal()).replace(".", ","));
 
             // Order 3
             ItemOrder[] itemOrder3 = new ItemOrder[] {
@@ -45,7 +45,7 @@ public class Program {
 
             Order order3 = new Order(5, itemOrder3);
 
-            System.out.printf("Total Order: %.2f\n", order3.calculateTotal());
+            System.out.printf(String.format("Total Order: %.2f\n", order3.calculateTotal()).replace(".", ","));
 
             // Order 4
             ItemOrder[] itemOrder4 = new ItemOrder[] {
@@ -58,6 +58,6 @@ public class Program {
 
             Order order4 = new Order(5, itemOrder4);
 
-            System.out.printf("Total Order: %.2f\n", order4.calculateTotal());
+            System.out.printf(String.format("Total Order: %.2f\n", order4.calculateTotal()).replace(".", ","));
 	}
     }
