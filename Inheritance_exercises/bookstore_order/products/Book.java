@@ -1,6 +1,6 @@
 package products;
 
-public class Book extends Product {
+public class Book extends Products {
 
 	int pages;
 	String author;

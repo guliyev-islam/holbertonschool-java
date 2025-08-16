@@ -1,11 +1,11 @@
-import products.Product;
+import products.Products;
 
 public class ItemOrder {
 
-	Product product;
+	Products product;
 	int quantity;
 
-	public ItemOrder(Product product, int quantity) {
+	public ItemOrder(Products product, int quantity) {
 		this.product = product;
 		this.quantity = quantity;
 	}
