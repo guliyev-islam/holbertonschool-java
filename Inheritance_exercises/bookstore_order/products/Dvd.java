@@ -1,6 +1,6 @@
 package products;
 
-public class Dvd extends Products {
+public class Dvd extends Product {
 
 	String director;
 	String genre;
@@ -14,7 +14,7 @@ public class Dvd extends Products {
 	}
 
 	public double getNetPrice() {
-		double increase = grossPrice * 20 / 100;
+		double increase = grossPrice / 100d * 20d;
 		return grossPrice + increase;
 	}
 }

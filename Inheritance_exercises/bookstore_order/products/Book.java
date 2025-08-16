@@ -1,6 +1,6 @@
 package products;
 
-public class Book extends Products {
+public class Book extends Product {
 
 	int pages;
 	String author;
@@ -14,7 +14,7 @@ public class Book extends Products {
 	}
 
 	public double getNetPrice() {
-		double increase = grossPrice * 15 / 100;
+		double increase = grossPrice / 100d * 15d;
 		return grossPrice + increase;
 	}
 }

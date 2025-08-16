@@ -9,13 +9,13 @@ public class Order {
 	}
 
 	public double calculateTotal() {
-		double totalPrice = 0;
+		double totalPrice = 0d;
 		
 		for (ItemOrder item: items) {
 			totalPrice += item.product.getNetPrice() * item.quantity;
 		}
 
-		double discount = totalPrice * discountPercentage / 100;
+		double discount = totalPrice * discountPercentage / 100d;
 
 		return totalPrice - discount;
 	}
