@@ -1,5 +1,5 @@
 package products;
-// abstract public class Product
+// abstract class Product
 abstract public class Products {
 
 	String title;
