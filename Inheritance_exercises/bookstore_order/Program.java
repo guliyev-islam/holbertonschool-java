@@ -58,6 +58,6 @@ public class Program {
 
             Order order4 = new Order(5, itemOrder4);
 
-            System.out.printf("Total Order: %.2f\n", order4.calculateTotal());
-        }
+            System.out.printf("Total Order: %.2f\n\n", order4.calculateTotal());
+	}
     }
