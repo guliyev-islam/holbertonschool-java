@@ -26,7 +26,7 @@ public class Order {
 	public void presentOrderSummary() {
         System.out.println("------- ORDER SUMMARY -------");
         for (ItemOrder item: items) {
-            System.out.printf(String.format("Type: %s  Title: %s  Price: %.2f  Quant: 1  Total: %.2f\n", (item.product.getClass() + "").split("\\.")[1], item.product.title, item.product.getNetPrice(), item.product.getNetPrice() * item.quantity).replace(".", ","));
+            System.out.printf(String.format("Type: %s  Title: %s  Price: %.2f  Quant: %d  Total: %.2f\n", (item.product.getClass() + "").split("\\.")[1], item.product.title, item.product.getNetPrice(), item.quantity, item.product.getNetPrice() * item.quantity).replace(".", ","));
         }
 
         System.out.println("----------------------------");
@@ -34,6 +34,24 @@ public class Order {
         System.out.printf(String.format("TOTAL PRODUCTS: %.2f\n", totalPrice).replace(".", ","));
         System.out.println("----------------------------");
         System.out.printf(String.format("TOTAL ORDER: %.2f\n", totalPrice - discount).replace(".", ","));
+        System.out.println("----------------------------");
+    }
+
+    public void modifiedPresentOrderSummary() {
+        System.out.println("------- ORDER SUMMARY -------");
+        for (ItemOrder item: items) {
+            if (item.product.title.equals("Annabelle - Creation")) {
+                System.out.printf(String.format("Type: %s  Title:%s  Price: %.2f  Quant: %d  Total: %.2f\n", (item.product.getClass() + "").split("\\.")[1], item.product.title, item.product.getNetPrice(), item.quantity, item.product.getNetPrice() * item.quantity).replace(".", ","));
+            } else {
+                System.out.printf(String.format("Type: %s  Title: %s  Price: %.2f  Quant: %d  Total: %.2f\n", (item.product.getClass() + "").split("\\.")[1], item.product.title, item.product.getNetPrice(), item.quantity, item.product.getNetPrice() * item.quantity).replace(".", ","));
+            }
+        }
+
+        System.out.println("----------------------------");
+        System.out.printf(String.format("DISCOUNT: %.2f\n", discount).replace(".", ","));
+        System.out.printf(String.format("TOTAL ORDER: %.2f\n", totalPrice).replace(".", ","));
+        System.out.println("----------------------------");
+        System.out.printf(String.format("TOTAL PEDIDO: %.2f\n", totalPrice - discount).replace(".", ","));
         System.out.println("----------------------------");
     }
 }
