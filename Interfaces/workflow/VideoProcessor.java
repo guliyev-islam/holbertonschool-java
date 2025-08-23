@@ -21,11 +21,7 @@ public class VideoProcessor {
         
         for (NotificationChannel channel : getChannels()) {
             channel.notify(message);
-            System.err.printf(" - %s", video.getFormat());
-            if (video.getFormat() == FormatVideo.MPEG) {
-                System.err.print("\n");
-            }
-            System.err.println();
+            System.out.printf(" - %s\n", video.getFormat());
         }
     }
 }
