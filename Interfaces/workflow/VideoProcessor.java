@@ -23,7 +23,7 @@ public class VideoProcessor {
             channel.notify(message);
             System.err.printf(" - %s", video.getFormat());
             if (video.getFormat() == FormatVideo.MPEG) {
-                System.err.print(" ");
+                System.err.print("\n");
             }
             System.err.println();
         }
