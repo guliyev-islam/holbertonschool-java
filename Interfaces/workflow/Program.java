@@ -39,6 +39,9 @@ public class Program {
 
             System.out.println();
 
-            videoProcessor5.process(video3);   
+            videoProcessor5.process(video3);
+	    System.out.println();
+	    System.out.println();
+	    System.out.println();
         }
     }
