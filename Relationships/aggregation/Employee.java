@@ -39,6 +39,6 @@ public class Employee {
         System.out.printf("Name: %s\n", getName());
         System.out.printf("District: %s\n", getAddress().getDistrict());
         System.out.printf("City: %s\n", getAddress().getCity());
-        System.out.printf("Country: %s\n",getAddress().getCountry());
+        System.out.printf("Country: %s",getAddress().getCountry());
     }
 }
