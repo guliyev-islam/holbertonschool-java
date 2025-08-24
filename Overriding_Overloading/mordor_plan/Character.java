@@ -30,6 +30,6 @@ public class Character {
 
     @Override
     public String toString() {
-        return String.format("%d - %s", happinessPoints, getCurrentMood().getClass().getSimpleName());
+        return String.format("%d - %s", happinessPoints, getCurrentMood().toString());
     }
 }
