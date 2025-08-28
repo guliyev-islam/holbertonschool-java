@@ -1,12 +1,12 @@
 import java.util.List;
 
 public class ManipulateArrayNumbers {
-    static public int findNumberPositio(List<Integer> numbers, Integer number) {
+    static public int findNumberPosition(List<Integer> numbers, Integer number) {
         return numbers.indexOf(number);
     }
 
     static public void addNumber(List<Integer> numbers, Integer number) throws Exception {
-        if (findNumberPositio(numbers, number) != -1) {
+        if (findNumberPosition(numbers, number) != -1) {
             throw new Exception("Number already in the list");
         }
 
@@ -14,7 +14,7 @@ public class ManipulateArrayNumbers {
     }
 
     static public void removeNumber(java.util.List<Integer> numbers, Integer number) throws Exception {
-        if (findNumberPositio(numbers, number) == -1) {
+        if (findNumberPosition(numbers, number) == -1) {
             throw new Exception("Number not found in the list");
         }
 
