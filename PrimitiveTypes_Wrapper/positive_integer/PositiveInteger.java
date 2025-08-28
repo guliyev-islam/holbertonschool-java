@@ -11,6 +11,11 @@ public class PositiveInteger {
         this.value = value;
     }
 
+    public void setValor (int value) throws IllegalArgumentException {    
+        if (value < 0) throw new IllegalArgumentException("Value is not a positive integer");
+        this.value = value;
+    }
+
     public PositiveInteger(int value) throws IllegalArgumentException {
         setValue(Integer.valueOf(value));
     }

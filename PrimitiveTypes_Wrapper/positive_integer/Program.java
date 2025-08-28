@@ -17,7 +17,7 @@ public class Program {
             }
 
             try {
-                positiveInteger1.setValue(-1);
+                positiveInteger1.setValor(-1);
                 System.out.println(positiveInteger1.getValue() + " - " + positiveInteger1.isPrime());
             } catch (Exception ex) {
                 System.out.println(ex.getMessage());
