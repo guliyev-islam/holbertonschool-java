@@ -4,7 +4,7 @@ public class Task {
     private boolean isDone;
     private int identifier;
 
-    public Task(String description, int identifier) throws Exception {
+    public Task(String description, int identifier) throws IllegalArgumentException {
         setDescription(description);
         setIdentifier(identifier);
     }
@@ -17,9 +17,9 @@ public class Task {
         return identifier;
     }
 
-    public void setDescription(String description) throws Exception {
+    public void setDescription(String description) throws IllegalArgumentException {
         if (description.equals("") || description == null) {
-            throw new Exception("Invalid task description");
+            throw new IllegalArgumentException("Invalid task description");
         } 
         this.description = description;
     }
@@ -36,7 +36,7 @@ public class Task {
         this.isDone = isDone;
     }
 
-    public void modifyDescription(String description) throws Exception {
+    public void modifyDescription(String description) throws IllegalArgumentException {
         setDescription(description);
     }
 }
