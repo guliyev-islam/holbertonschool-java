@@ -11,7 +11,7 @@ public class PhraseAnalyzer {
         for (String word: words) {
             word = word.toLowerCase();
             if (!treeMap.containsKey(word)) {
-                treeMap.put(word, 1);
+                treeMap.put(word, 0);
             }
 
             treeMap.put(word, treeMap.get(word) + 1);
