@@ -34,11 +34,11 @@ public class Mobile {
      }
 
      public void updateContact(Contact oldContact, Contact newContact) throws IllegalArgumentException {
-        if (!getContacts().contains(oldContact)) {
+        if (getContactPosition(oldContact.getName()) == -1) {
             throw new IllegalArgumentException("Could not modify contact. Contact does not exist");
         }
 
-        if (getContacts().contains(newContact)) {
+        if (getContactPosition(oldContact.getName()) != -1) {
             throw new IllegalArgumentException("Could not modify contact. Contact with this name already exists");
         }
 
@@ -55,7 +55,7 @@ public class Mobile {
 
     public void listContacts() {
         for (Contact contact: getContacts()) {
-            System.err.printf("%s -> %s (%s)\n", contact.getName(), contact.getPhoneNumber(), contact.getType());
+            System.out.printf("%s -> %s (%s)\n", contact.getName(), contact.getPhoneNumber(), contact.getType());
         }
     }
 }
