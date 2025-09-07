@@ -1,4 +1,4 @@
-public class Program {
+    public class Program {
         public static void main(String[] args) {
             Mobile mobile = new Mobile();
 
@@ -74,7 +74,7 @@ public class Program {
             System.out.println("-----");
 
             try {
-                mobile.removeContact(new Contact("Jane", "32214333", NumberType.HOME));
+                mobile.updateContact(new Contact("Jane", "32214333", NumberType.HOME), contact1);
                 mobile.listContacts();
             } catch(Exception ex) {
                 System.out.println(ex.getMessage());

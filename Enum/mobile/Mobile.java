@@ -34,23 +34,30 @@ public class Mobile {
      }
 
      public void updateContact(Contact oldContact, Contact newContact) throws IllegalArgumentException {
-        if (getContactPosition(oldContact.getName()) == -1) {
+        
+        int oldContactIndex = getContactPosition(oldContact.getName());
+        int newContactIndex = getContactPosition(newContact.getName());
+        
+        if (oldContactIndex == -1) {
             throw new IllegalArgumentException("Could not modify contact. Contact does not exist");
         }
-
-        if (getContactPosition(oldContact.getName()) != -1) {
+    
+        if (!oldContact.getName().equals(newContact.getName())) {
             throw new IllegalArgumentException("Could not modify contact. Contact with this name already exists");
         }
 
-        getContacts().set(getContacts().indexOf(oldContact), newContact);
+        getContacts().set(oldContactIndex, newContact);
      }
 
      public void removeContact(Contact contact) throws IllegalArgumentException {
-        if (getContactPosition(contact.getName()) == -1) {
+        
+        int contactIndex = getContactPosition(contact.getName());
+        
+        if (contactIndex == -1) {
             throw new IllegalArgumentException("Could not remove contact. Contact does not exist");
         }
         
-        getContacts().remove(contact);
+        getContacts().remove(getContacts().get(contactIndex));
     }
 
     public void listContacts() {
