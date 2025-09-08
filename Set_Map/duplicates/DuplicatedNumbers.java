@@ -26,7 +26,7 @@ public class DuplicatedNumbers {
 
     static public TreeSet<Integer> isFind(int[] integers) {
         TreeSet<Integer> duplicates = new TreeSet<Integer>();
-        TreeSet<Integer> set = new TreeSet<Integer>();
+        HashSet<Integer> set = new HashSet<Integer>();
 
         for (Integer integer: integers) {
             if (!set.add(integer)) {
