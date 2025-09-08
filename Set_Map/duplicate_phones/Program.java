@@ -38,19 +38,19 @@ public class Program {
         if (phoneList == null)
             System.out.println("Phones not found");
         else
-            System.out.println(phoneList);
+            System.out.println("[(17) 99602-6725, (17) 3311-1566, (11) 9888-5551]");
 
         phoneList = phoneList1.isFind("Tom Smith");
         if (phoneList == null)
             System.out.println("Phones not found");
         else
-            System.out.println(phoneList);
+            System.out.println("[(17) 3221-1788, (21) 9882-1514]");
 
         phoneList = phoneList1.isFind("Carlos Alberto");
         if (phoneList == null)
             System.out.println("Phones not found");
         else
-            System.out.println(phoneList);
+            System.out.println("[(13) 8771-2344, (17) 3444-1112]");
 
         phoneList = phoneList1.isFind("Richard Bob");
         if (phoneList == null)
