@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class Library<T> {
+public class Library<T extends Media> {
 
     ArrayList<T> mediaList;
     
