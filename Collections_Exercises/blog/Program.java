@@ -41,6 +41,6 @@ import java.util.*;
 
             Map<String, Integer> counting = blog1.getCountByCategory();
 
-            System.out.println("{Development=2, DevOps=3}");
+            System.out.println(counting);
         }
     }
