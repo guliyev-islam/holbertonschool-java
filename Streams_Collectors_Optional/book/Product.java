@@ -50,6 +50,6 @@ public class Product {
     @Override
     public String toString() {
         
-        return String.format("[%d] %s %s $ %.2f]", getCode(), getName(), getCategory(), getPrice());
+        return String.format("[%d] %s %s $ %.2f", getCode(), getName(), getCategory(), getPrice());
     }
 }
