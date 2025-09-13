@@ -1,5 +1,3 @@
-package com.iq;
-
 import java.time.*;
 
 public class Person {
