@@ -1,5 +1,8 @@
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.*;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.ValueSource;
+
 import java.time.*;
 
 public class PersonTest {
@@ -12,40 +15,38 @@ public class PersonTest {
     }
 
     @ParameterizedTest
-    public void check_user_valid() {
-        assertTrue(person.checkUser("PaulMcCartney2"));
-        assertTrue(person.checkUser("NeilArms2"));
+    @ValueSource(strings = {"PaulMcCartney2", "NeilArms2"})
+    public void check_user_valid(String name) {
+        assertTrue(person.checkUser(name));
     }
 
     @ParameterizedTest
-    public void check_user_not_valid() {
-        assertFalse(person.checkUser("Paul#McCartney"));
-        assertFalse(person.checkUser("Neil@Arms"));
+    @ValueSource(strings = {"Paul#McCartney", "Neil@Arms"})
+    public void check_user_not_valid(String name) {
+        assertFalse(person.checkUser(name));
     }
 
     @ParameterizedTest
-    public void does_not_have_letters() {
-        assertFalse(person.checkPassword("123456789"));
-        assertFalse(person.checkPassword("#$%1234"));
+    @ValueSource(strings = {"123456789", "#$%1234"})
+    public void does_not_have_letters(String password) {
+        assertFalse(person.checkPassword(password));
     }
 
     @ParameterizedTest
-    public void does_not_have_numbers() {
-        assertFalse(person.checkPassword("Abcabcdefgh@"));
-        assertFalse(person.checkPassword("#hbtn@%tc"));
+    @ValueSource(strings = {"Abcabcdefgh@", "#hbtn@%tc"})
+    public void does_not_have_numbers(String password) {
+        assertFalse(person.checkPassword(password));
     }
 
     @ParameterizedTest
-    public void does_not_have_eight_chars() {
-        assertFalse(person.checkPassword("Abc@123"));
-        assertFalse(person.checkPassword("12$@hbt"));
+    @ValueSource(strings = {"Abc@123", "12$@hbt"})
+    public void does_not_have_eight_chars(String password) {
+        assertFalse(person.checkPassword(password));
     }
 
     @ParameterizedTest
-    public void check_password_valid() {
-        assertTrue(person.checkPassword("abC123456$"));
-        assertTrue(person.checkPassword("Hbtn@1234"));
-        assertTrue(person.checkPassword("Betty@1#2"));
-        assertTrue(person.checkPassword("Hbtn@123"));
+    @ValueSource(strings = {"abC123456$", "Hbtn@1234", "Betty@1#2", "Hbtn@123"})
+    public void check_password_valid(String password) {
+        assertTrue(person.checkPassword(password));
     }
 }
