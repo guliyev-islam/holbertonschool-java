@@ -1,7 +1,3 @@
-package com.iq;
-
-import java.io.StringReader;
-
 public class Person {
     public boolean checkUser(String name) {
         if (!name.matches("[a-zA-Z0-9]+")) {

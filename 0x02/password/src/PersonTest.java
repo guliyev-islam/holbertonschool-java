@@ -1,5 +1,3 @@
-package com.iq;
-
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.*;
 import java.time.*;
@@ -13,37 +11,37 @@ public class PersonTest {
         person = new Person();
     }
 
-    @Test
+    @ParameterizedTest
     public void check_user_valid() {
         assertTrue(person.checkUser("PaulMcCartney2"));
         assertTrue(person.checkUser("NeilArms2"));
     }
 
-    @Test
+    @ParameterizedTest
     public void check_user_not_valid() {
         assertFalse(person.checkUser("Paul#McCartney"));
         assertFalse(person.checkUser("Neil@Arms"));
     }
 
-    @Test
+    @ParameterizedTest
     public void does_not_have_letters() {
         assertFalse(person.checkPassword("123456789"));
         assertFalse(person.checkPassword("#$%1234"));
     }
 
-    @Test
+    @ParameterizedTest
     public void does_not_have_numbers() {
         assertFalse(person.checkPassword("Abcabcdefgh@"));
         assertFalse(person.checkPassword("#hbtn@%tc"));
     }
 
-    @Test
+    @ParameterizedTest
     public void does_not_have_eight_chars() {
         assertFalse(person.checkPassword("Abc@123"));
         assertFalse(person.checkPassword("12$@hbt"));
     }
 
-    @Test
+    @ParameterizedTest
     public void check_password_valid() {
         assertTrue(person.checkPassword("abC123456$"));
         assertTrue(person.checkPassword("Hbtn@1234"));
