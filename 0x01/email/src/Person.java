@@ -1,5 +1,5 @@
 public class Person {
-	public static boolean emailValid(String email) {
+	public static boolean isEmailValid(String email) {
 		if (!email.contains("@")) {
 			return false;
 		}
