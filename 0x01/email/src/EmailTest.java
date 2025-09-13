@@ -6,7 +6,7 @@ public class EmailTest {
 		assertTrue(Person.isEmailValid("email_test@domain.com"));
 	}
 
-	public static void test_email_without_at_symbol() {
+	public static void test_email_without_at_symbol() { //testar_email_sem_arroba
 		assertTrue(Person.isEmailValid("email_testdomain.com"));
 	}
 
