@@ -1,1 +1,2 @@
-1,Betty,betty@techcamps.com,12345678;
+id,name,email,phone
+1,Betty,betty@techcamps.com,12345678
