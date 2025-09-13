@@ -6,7 +6,7 @@ public class Program {
         boolean isValidEmail = EmailTest.test_email_with_at_symbol();
         System.out.println(isValidEmail);
 
-              System.out.println("Email Test Without \"@\" Symbol");
+              System.out.println("Email Test Without @ Symbol");
         isValidEmail = EmailTest.test_email_without_at_symbol();
         System.out.println(isValidEmail);
 
