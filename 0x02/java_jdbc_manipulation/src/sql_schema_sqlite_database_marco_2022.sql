@@ -1,0 +1,7 @@
+CREATE TABLE Customer (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    age INT,
+    cpf VARCHAR(20) UNIQUE,
+    rg VARCHAR(20) UNIQUE
+);
