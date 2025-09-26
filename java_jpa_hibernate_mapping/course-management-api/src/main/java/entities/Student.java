@@ -2,7 +2,7 @@ package entities;
 
 import javax.persistence.*;
 import java.util.List;
-
+//birthDate
 @Entity
 @Table(name = "students")
 public class Student {
