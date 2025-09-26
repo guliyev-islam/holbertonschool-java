@@ -1,41 +1,23 @@
-Still working on it - not ready.
-Still working on it - not ready.
-Still working on it - not ready.
-Still working on it - not ready.
-Still working on it - not ready.
-Still working on it - not ready.
-Still working on it - not ready.
-Still working on it - not ready.
-Still working on it - not ready.
-Still working on it - not ready.
-Still working on it - not ready.
-Still working on it - not ready.
-Still working on it - not ready.
-Still working on it - not ready.
-Still working on it - not ready.
-Still working on it - not ready.
-Still working on it - not ready.
-Still working on it - not ready.
-Still working on it - not ready.
-Still working on it - not ready.
-Still working on it - not ready.
-Still working on it - not ready.
-Still working on it - not ready.
-Still working on it - not ready.
-Still working on it - not ready.
-Still working on it - not ready.
-Still working on it - not ready.
-Still working on it - not ready.
-Still working on it - not ready.
-Still working on it - not ready.
-Still working on it - not ready.
-Still working on it - not ready.
-Still working on it - not ready.
-Still working on it - not ready.
-Still working on it - not ready.
-Still working on it - not ready.
-Still working on it - not ready.
-Still working on it - not ready.
-Still working on it - not ready.
-Still working on it - not ready.
-Still working on it - not ready.
+# Microservices Architecture - Lecture Summary
+
+## What are Microservices?
+
+Microservices are an architectural approach that structures applications as a collection of small, independent, loosely-coupled services. Each service is responsible for a specific business function and can be developed, deployed, and scaled independently.
+
+## Overview of Monolithic and Microservices Architecture
+
+**Monolithic Architecture** builds applications as a single deployable unit where all components are interconnected and interdependent. Changes require redeploying the entire application.
+
+**Microservices Architecture** decomposes applications into multiple small services that communicate over well-defined APIs. Each service runs in its own process and can be developed using different technologies.
+
+## Benefits of Microservices Architecture
+
+1. **Independent Scalability** - Scale individual services based on demand rather than the entire application
+2. **Technology Diversity** - Use different programming languages, databases, and frameworks for each service
+3. **Fault Isolation** - Failure in one service doesn't necessarily bring down the entire system
+
+## Types of Communication Between Microservices
+
+- **Synchronous Communication**: Direct HTTP/REST API calls, gRPC
+- **Asynchronous Communication**: Message queues, event streaming, publish-subscribe patterns
+- **Database-per-Service**: Each microservice maintains its own database for data independence
