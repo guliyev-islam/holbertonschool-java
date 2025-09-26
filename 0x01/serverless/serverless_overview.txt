@@ -1,0 +1,25 @@
+# Serverless and Cloud Architecture - Lecture Summary
+
+## What is Serverless Architecture?
+
+Serverless architecture is a cloud computing model where developers build and run applications without managing servers. The cloud provider automatically handles server provisioning, scaling, and maintenance, allowing developers to focus purely on code.
+
+## What is Function as a Service (FaaS)?
+
+FaaS is a serverless computing service that executes code in response to events. Functions are stateless, event-driven, and automatically scaled. Examples include AWS Lambda, Azure Functions, and Google Cloud Functions.
+
+## Benefits of Serverless Architecture
+
+- **Cost Efficiency** - Pay only for actual execution time and resources used
+- **Automatic Scaling** - Instantly scales from zero to thousands of concurrent executions
+- **Reduced Operational Overhead** - No server management or infrastructure maintenance required
+
+## What is Cloud Computing and Its Benefits?
+
+Cloud computing delivers computing services over the internet, including servers, storage, databases, and software. Benefits include scalability, cost reduction, accessibility from anywhere, automatic updates, and disaster recovery.
+
+## Main Differences Between Architectures
+
+**Monolithic**: Single deployable unit, shared database, tight coupling
+**Microservices**: Multiple independent services, service-specific databases, loose coupling
+**Serverless**: Event-driven functions, no server management, extreme scalability, stateless execution
