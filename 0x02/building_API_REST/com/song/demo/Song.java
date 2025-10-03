@@ -4,3 +4,4 @@ String releaseYear
 getId
 getName
 getArtist
+getAlbum
