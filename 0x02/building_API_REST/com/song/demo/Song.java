@@ -6,3 +6,4 @@ getName
 getArtist
 getAlbum
 getReleaseYear
+toString
