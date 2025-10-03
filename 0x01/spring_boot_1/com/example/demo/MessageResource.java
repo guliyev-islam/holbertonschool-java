@@ -1,1 +1,2 @@
- @GetMapping
+@GetMapping
+@RestController
