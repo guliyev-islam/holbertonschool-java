@@ -5,3 +5,4 @@ getId
 getName
 getArtist
 getAlbum
+getReleaseYear
