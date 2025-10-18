@@ -1,5 +1,5 @@
 import java.util.ArrayList;
-
+//public abstract List<String> getIngredients
 public abstract class Beverage {
     public abstract ArrayList<String> getIngredients();
     public abstract double getPrice();
