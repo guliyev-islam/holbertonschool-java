@@ -3,7 +3,7 @@ import java.util.List;
 
 public class CoffeeBeverage extends Beverage {
     @Override
-    public ArrayList<String> getIngredients() {
+    public List<String> getIngredients() {
         return new ArrayList<String>(List.of("coffee"));
     }
 
