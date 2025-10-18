@@ -1,0 +1,11 @@
+import java.util.ArrayList;
+
+public abstract class Beverage {
+    public abstract ArrayList<String> getIngredients();
+    public abstract double getPrice();
+
+    @Override
+    public String toString() {
+        return String.format("Price: %.2f - Ingredients: %s", getPrice(), getIngredients());
+    }
+}
