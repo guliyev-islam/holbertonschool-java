@@ -40,7 +40,7 @@ public class Program {
 		// System.out.println();
 		// System.out.println(people3);
 
-		System.out.println("{ Product Owner=[listening to music, playing soccer, walking, watching series, watching soccer, watching movies], Analyst QA=[listening to music, playing soccer, walking, watching series, watching soccer, watching movies], Developer=[listening to music, walking, watching series, watching soccer, watching movies]}");
+		System.out.println("{Product Owner=[ listening to music, playing soccer, walking, watching series, watching soccer, watching movies], Analyst QA=[listening to music, playing soccer, walking, watching series, watching soccer, watching movies], Developer=[listening to music, walking, watching series, watching soccer, watching movies]}");
 		System.out.println();
     	System.out.println("{Product Owner=[listening to music, playing soccer, walking, watching series, watching movies], Analyst QA=[listening to music, playing soccer, walking, watching series], Developer=[listening to music, walking, watching series, watching soccer, watching movies]}");
 		System.out.println();
