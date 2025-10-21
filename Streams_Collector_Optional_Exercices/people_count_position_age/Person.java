@@ -19,7 +19,7 @@ public class Person {
 
     @Override
     public String toString() {
-        return String.format("[%d] %s %s %d $ %f",
+        return String.format("[%d] %s %s %d $ %.2f",
         this.code,
         this.name,
         this.position,

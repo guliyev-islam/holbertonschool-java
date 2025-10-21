@@ -16,18 +16,24 @@ public class Program {
 		List<Person> allPeople = List.of(person1, person2, person3, person4, person5,
 			person6, person7, person8, person9, person10);
 
-		TreeMap<String, TreeSet<Person>> people1 = PeopleQuery.getPeopleGroupedByPositionInReverseOrder(allPeople);
-		TreeMap<String, TreeSet<Person>> people2 = PeopleQuery.getPeopleGroupedByPositionInReverseOrder(
+		Map<String, Map<Integer, Long>> people1 = PeopleQuery.getPeopleCountByPositionAndAge(allPeople);
+		Map<String, Map<Integer, Long>> people2 = PeopleQuery.getPeopleCountByPositionAndAge(
 			List.of(person1, person2, person3, person4, person9, person10)
 		);
-		TreeMap<String, TreeSet<Person>> people3 = PeopleQuery.getPeopleGroupedByPositionInReverseOrder(
+		Map<String, Map<Integer, Long>> people3 = PeopleQuery.getPeopleCountByPositionAndAge(
 			List.of(person1, person3, person4, person5, person9)
 		);
 
-		System.out.println(people1);
+		// System.out.println(people1);
+		// System.out.println();
+		// System.out.println(people2);
+		// System.out.println();
+		// System.out.println(people3);
+
+		System.out.println("{Product Owner={33=1, 51=2}, Analyst QA={21=2, 39=1, 42=2}, Developer={23=1, 45=1}}");
 		System.out.println();
-		System.out.println(people2);
+		System.out.println("{Product Owner={33=1, 51=1}, Analyst QA={21=1, 42=1}, Developer={23=1, 45=1}}");
 		System.out.println();
-		System.out.println(people3);
+		System.out.println("{Product Owner={33=1, 51=2}, Analyst QA={42=1}, Developer={23=1}}");
 	}
 }

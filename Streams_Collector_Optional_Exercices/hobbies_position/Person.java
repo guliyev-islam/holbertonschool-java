@@ -1,25 +1,30 @@
+import java.util.List;
+
 public class Person {
     private int code;
     private String name;
     private String position;
     private int age;
     private double salary;
+    private List<String> hobbies;
 
     public Person(int code,
         String name,
         String position,
         int age,
-        double salary) {
+        double salary,
+        List<String> hobbies) {
             setCode(code);
             setName(name);
             setPosition(position);
             setAge(age);
             setSalary(salary);
+            setHobbies(hobbies);
     }
 
     @Override
     public String toString() {
-        return String.format("[%d] %s %s %d $ %f",
+        return String.format("[%d] %s %s %d $ %.2f",
         this.code,
         this.name,
         this.position,
@@ -47,6 +52,10 @@ public class Person {
         return this.salary;
     }
 
+    public List<String> getHobbies() {
+        return this.hobbies;
+    }
+
     public void setCode(int code) {
         this.code = code;
     }
@@ -65,5 +74,9 @@ public class Person {
 
     public void setSalary(double salary) {
         this.salary = salary;
+    }
+
+    public void setHobbies(List<String> hobbies) {
+        this.hobbies = hobbies;
     }
 }

@@ -18,8 +18,13 @@ public class Person {
     }
 
     @Override
+    public int hashCode() {
+        return this.hashCode();
+    }
+
+    @Override
     public String toString() {
-        return String.format("[%d] %s %s %d $ %f",
+        return String.format("[%d] %s %s %d $ %.2f",
         this.code,
         this.name,
         this.position,
